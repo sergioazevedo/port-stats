@@ -1,21 +1,26 @@
 {
   "name": "port-stats",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "description": "Simple port data statistcs tool",
   "author": "Sergio Azevedo",
-  "private": true,
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf ./dist",
+    "start": "tsc && node dist/main.js",
     "test": "jest"
   },
   "devDependencies": {
+    "@types/fetch-mock": "^7.3.8",
     "@types/jest": "^29.5.14",
+    "@types/node-fetch": "^2.6.11",
+    "fetch-mock": "^10.0.0",
+    "fetch-mock-jest": "^1.5.1",
     "jest": "^29.7.0",
     "ts-jest": "^29.2.5",
-    "typescript": "^5.6.3",
-    "typescript-eslint": "^8.11.0"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "hdr-histogram-js": "^3.0.0",
+    "node-fetch": "^2.7.0"
   }
 }
