@@ -1,0 +1,21 @@
+{
+  "name": "port-stats",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "description": "Simple port data statistcs tool",
+  "author": "Sergio Azevedo",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf ./dist",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.11.0"
+  }
+}
